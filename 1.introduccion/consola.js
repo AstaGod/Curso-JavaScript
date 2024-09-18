@@ -20,3 +20,13 @@ edad=18
    }
 
 console.timeEnd("tiempo de ejecucion")
+
+// mensaje de tipo tabla
+console.table("soy una tabla y edwin cachondo y orlando un virgen")
+lenguajes=[
+   {nombre:"javascript",extencion:".js"},
+   {nombre:"python",extencion:".py"},
+   {nombre:"php",extencion:".php"}
+]
+console.log(lenguajes)
+console.table(lenguajes)

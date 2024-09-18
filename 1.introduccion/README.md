@@ -2,8 +2,7 @@
 - **Temario**
   - [comentarios](#comentarios) 
   - [la consola](#consola)
-  - Naining
-  
+  - [Naining](#naining)  
 ## Comentarios
 Es la parte denttro de mi archivo de codigo que no es leido ni ejecutado por el interpetre de `js`.
 > [!TIP]
@@ -67,3 +66,50 @@ Es la parte denttro de mi archivo de codigo que no es leido ni ejecutado por el 
    }
    ```
    #### 3. Tablas
+   Este tipo de mensaje por consola nos muestra la informacion en una tabla.
+   Solo formateara a los datos de tipo `array` y `objeto`
+   ```js
+   lenguajes=[
+      {nombre:"javascript",extencion:".js"},
+      {nombre:"python",extencion:".py"},
+      {nombre:"php",extencion:".php"}
+   ]
+   ```
+   [para ver los ejemplos has clic aqui](consola.js)
+
+   ## naining
+   Es la tecnica para nombrar variables, funcion y clases dentro de un lenguaje de programacion.
+   Las variables tienen reglas muy especificas que debemos seguir a la hora de designar sus nombrres.
+   ### Usos Incorrectos
+   - No se pueden usar espacios
+   > [!WARNING]
+   > ```js
+   > #Incorrecto
+   > con esapacio=45
+   > ```
+
+   - No usar un numero delante
+   > [!WARNING]
+   > ```js
+   > #Incorrecto
+   > 1numero=45
+   > ```
+
+   - Evitar simbolos y `snake_case`
+   > [!WARNING]
+   > ```js
+   > #Incorrecto
+   > dame$=45
+   > #Incorrecto
+   > con_guiones_bajos="no es correcto"
+   > ```
+
+   ### Usos Correctos
+   - Debemos usar nombres que expliquen que aporta esa variable a nuestro codigo 
+   - Usar `camelCase`
+   > [!TIP]
+   > ```js
+   > #Correcto
+   > edadAlumno=45
+   > ```
+  
