@@ -4,7 +4,7 @@
   - [la consola](#consola)
   - [Naining](#naining)  
 ## Comentarios
-Es la parte denttro de mi archivo de codigo que no es leido ni ejecutado por el interpetre de `js`.
+Es la parte dentro de mi archivo de codigo que no es leido ni ejecutado por el interpetre de `js`.
 > [!TIP]
 > Los comentarios nos ayudan a entender nuestro codigo, y en ocasiones podemos usarlos para silenciar temporalmente partes del codigo *(comentar un codigo)*
 
