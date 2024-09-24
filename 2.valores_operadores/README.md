@@ -49,6 +49,7 @@ NaN
 // no es un numero
 // cuando el resultado de una operacion es matematicamente imposible.
 ```
+#### Aritmetica (operadores aritmerico)
 > [!WARNING]
 > Cuando javascript realiza operacion con numeros enteros el resultado siempre sera exacta, cuando realize operacion con numeros decimales el resultado perdera precision por que solo tiene 64 bits para almacenar el numero estto suele ocurrir con resultados cuyos decimales sean infinitos como el caso el numero PI **es nuestra responsabilidad como programadores hacer el uso de los decimales con aproximaciones para evitar errores**
 ---
