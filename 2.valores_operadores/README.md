@@ -1,6 +1,15 @@
 # Valores, Tipos y Operadores
 ## Indice
-- [tipos de datos o valores](#valores)
+- [Valores, Tipos y Operadores](#valores-tipos-y-operadores)
+  - [Indice](#indice)
+  - [valores](#valores)
+    - [Datos primitivos](#datos-primitivos)
+      - [Numeros(Number)](#numerosnumber)
+      - [numero de tipo entero](#numero-de-tipo-entero)
+      - [numero de punto flotante, decimal, fraccion](#numero-de-punto-flotante-decimal-fraccion)
+      - [numeros notacion cientifica](#numeros-notacion-cientifica)
+      - [numeros especiales](#numeros-especiales)
+      - [Aritmetica (operadores aritmerico)](#aritmetica-operadores-aritmerico)
 ## valores
 Imagina unmar de bits.
 Una computadora moderna tiene mas de 100 mil millones de bits almacenados en su `memoria de trabajo`o`memoria principal`o`memoria volatil`o`ram`.
@@ -15,9 +24,9 @@ cuando hablamos de tipos de datos en javascript nos referimos a su representacio
 ### Datos primitivos
 son aquellos datos que ya existen no pueden ser creados, actualizados, ni eliminados solo pueden ser llamados para el uso que deseamos darle.
 los datos primitivos en javascript son
-#### - Numeros(Number)
+#### Numeros(Number)
 los valores de tipo numero, como es de esperar son numeros y en javascript se escribe o se hace el llamado de la siguiente manera
-- numero de tipo entero
+#### numero de tipo entero
 ```js
 // entero positivo
 20
@@ -25,7 +34,7 @@ los valores de tipo numero, como es de esperar son numeros y en javascript se es
 -20
 //estamos usando un patron de bits para el numero 20 que existia dentro de la memoria de trabajo
 ```
-- numero de punto flotante, decimal, fraccion
+#### numero de punto flotante, decimal, fraccion
 ```js
 // decimal positivo
 2.7
@@ -34,12 +43,12 @@ los valores de tipo numero, como es de esperar son numeros y en javascript se es
 // decimal negativo
 -3.6
 ```
-- numeros notacion cientifica
+#### numeros notacion cientifica
 ```js
 2.998e8
 // 9.998 * 10^8
 ```
-- numeros especiales
+#### numeros especiales
 en javascript existen tres valores de tipo numero que se consideran un dato primitivo numerico de tipo especial
 ```js
 Infinity
@@ -49,9 +58,20 @@ NaN
 // no es un numero
 // cuando el resultado de una operacion es matematicamente imposible.
 ```
-#### Aritmetica (operadores aritmerico)
 > [!WARNING]
 > Cuando javascript realiza operacion con numeros enteros el resultado siempre sera exacta, cuando realize operacion con numeros decimales el resultado perdera precision por que solo tiene 64 bits para almacenar el numero estto suele ocurrir con resultados cuyos decimales sean infinitos como el caso el numero PI **es nuestra responsabilidad como programadores hacer el uso de los decimales con aproximaciones para evitar errores**
 ---
 > [!TIP]
 > Cuando javascript hace trabajo de memoria (cuando crea un patron de bit para almacenar) todos los numeros son almacena como decimal positivo
+#### Aritmetica (operadores aritmerico)
+la principal operacion que se puede hacer con numero es la aritmerica.
+para estl tenemoslos Operadores Aritmericos como:
+- suma (+).
+- resta (-).
+- multiplicacion (*).
+- division (/).
+- potencia (**).
+- modulo (%).
+**podemos agrupar operacin con parentesis () las operciones que esten entre los parentesis se ejecutaran primero**
+consulta el archivo de operadores [aqui](./operadores.js).
+ve los ejercicios [aqui](./ejercicios.js)
