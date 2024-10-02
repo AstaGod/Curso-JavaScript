@@ -13,3 +13,12 @@ console.warn((5+(2/(5+2+(5/2)))/(10+(10/(5+5)))))
 console.warn((5+5+5)/(5+(5/2)))
 console.warn((5+5+(9/(5*5)))/((2+2)*(10/5)))
 console.warn((10+(5/2)+2)/2)
+
+//crear una variable de numero y mostrar por terminal el numero sumado mas uno
+num=2
+console.log(++num)
+
+//crear una variable que almacene un numero y que por terminal el numero y luego el numero sumado mas uno
+num1=3
+console.log(num1++)
+console.log(num1)

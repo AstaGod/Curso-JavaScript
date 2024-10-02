@@ -77,6 +77,8 @@ para estl tenemoslos Operadores Aritmericos como:
 - division (/).
 - potencia (**).
 - modulo (%).
+- incremento (++).
+- decremento (--).
 **podemos agrupar operacin con parentesis () las operciones que esten entre los parentesis se ejecutaran primero**
 consulta el archivo de operadores [aqui](./operadores.js).
 ve los ejercicios [aqui](./ejercicios.js)
