@@ -4,6 +4,11 @@
   - [Tipos de Argumentos y Parametros](#tipos-de-argumentos-y-parametros)
     - [Argumentos y Parametros Posicionales](#argumentos-y-parametros-posicionales)
     - [Argumentos y Parametros Nominales](#argumentos-y-parametros-nominales)
+  - [Tipos de funciones por su notacion](#tipos-de-funciones-por-su-notacion)
+    - [Funciones como valor](#funciones-como-valor)
+    - [Funcion como declaracion](#funcion-como-declaracion)
+    - [Funcion de flecha (arrow function)](#funcion-de-flecha-arrow-function)
+    - [Diferencias](#diferencias)
 
 ## estructura de una funcion (como se crear una funcion)
 para crear una funcion debemos realizar los siguientes pasos.
@@ -80,3 +85,53 @@ registroAlumno("jory","rodrigues","todos los dias")
 ```
 > [!INFO]
 > Posicinales en orden y Nominales especificar el parametro y su valor
+
+## Tipos de funciones por su notacion
+### Funciones como valor
+en este caso se crea una funcion como si fuera un valor de un enlace
+```js
+let saludo=function(){
+    console.log("bienbenido")
+}
+
+saludo()
+```
+en este caso el nombre de la funcio sera el nombre que le pongamos al enlacey para llamarlo o ejecutarlo debemos poner el nombre del enlace mas los parentesis.
+al igual que una funcion clasica podemos tambien pasarle parametros
+### Funcion como declaracion
+se le conoce como funcion `declarativa` a la manera clasica de como creamos una funcion.
+```js
+function saludo(){
+    return "saludos a todos"
+}
+console.log(saludo())
+```
+### Funcion de flecha (arrow function)
+esta funcion es introducida a partir de la version de ecma script 5 `es5`.
+se implemento para la creacion y ejecucion rapida y mas entendible de las funciones.
+la funcion flecha evita la `verbosidad` en javascript
+> [!NOTE]
+> `verbosidad` o `verboso` se utiliza en la programacion para referirse a un codigo que necesita demaciadas lineas de codigo o necesitar cumplir estrictamente una serie de reglas podemos comprar `verbosidad` a un texto demaciado extenso o redundante.
+
+se crea de la misma manera que una funcion como valor, eso quiere decir que la funcionflecha sera el valor de un enlace.
+la funcion flecha tiene la siguiente estructura
+el parametro seguido del sinbolo flecha `=>` y del cuerpo de ser necesario o solo del codigo que se retornara
+```js
+function saludo(){
+    return "hola putas"
+}
+console.log(saludo())
+
+let saludo=()=>("hola mundo")
+console.log(saludo())
+
+let mensaje=texto=>console.log("hola",texto)
+console.log(mensaje("el primo"))
+//em el caso de tener mas de un parametro y ejecutar mas de una sola linea de codigo
+let registroUsuario=(nombre,apellido)=>{
+    let alumno=`${nombre}, ${apellido}`
+    return alumno
+}
+console.loG(registroUsuario("edwin","cachondo"))
+```
+### Diferencias
