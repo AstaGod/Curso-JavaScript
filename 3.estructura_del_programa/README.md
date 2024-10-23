@@ -119,6 +119,22 @@ else if (total_compra >= 100 && total_compra < 500){
   console.log(`tienes un descuento del 50% ${total_compra*0.50}`)
 }
 ```
+- **condicion multiple `switch`**
+javascript dispone de una opcion para crear estructuras condicionales multiples. `switch` permite crear estructuras mas optimizadas para cubrir un amplio abanico de posibilidades.
+```js
+let edad=Number(promt("ingrese su edad"))
+switch (edad){
+  case 4:
+    console.log("tienes 4 años")
+    break
+  case 8:
+    console.log("tienes 8 años")
+    break
+  default:
+    console.log("tienes:",edad)
+    break
+}
+```
 ### Bucles
 Consideremos el siguiente problema
 Crear un programa que imprima los numeros que imprima los numeros del 1 al 12 una forma de hacerlo seria el siguiente
