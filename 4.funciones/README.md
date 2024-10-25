@@ -9,6 +9,8 @@
     - [Funcion como declaracion](#funcion-como-declaracion)
     - [Funcion de flecha (arrow function)](#funcion-de-flecha-arrow-function)
     - [Diferencias](#diferencias)
+    - [binding](#binding)
+  - [la pila de llamadas (call stack)](#la-pila-de-llamadas-call-stack)
 
 ## estructura de una funcion (como se crear una funcion)
 para crear una funcion debemos realizar los siguientes pasos.
@@ -135,3 +137,49 @@ let registroUsuario=(nombre,apellido)=>{
 console.loG(registroUsuario("edwin","cachondo"))
 ```
 ### Diferencias
+las diferencias que tenemos al momento de crear una funcion declarativa, funcion como valor y flechaes el binding.
+### binding
+es una tecnica que guarda las funciones y variables (enlaces) sube al principio la de declaracion no el valor a la cabecera del archivo javascript
+```js
+despedida()
+function saludo(){
+    return "hola"
+}
+function despedida(){
+    return "adios"
+}
+```
+```js
+function saludo()
+function despedida()
+```
+## la pila de llamadas (call stack)
+es una tecnica que se usa para controlar de manera correcta la ejecucion de una funcion.
+**Averiguar sobre LIFO**
+```js
+//programa que haga una ensalada
+function cortarTomate() {
+    console.log("cortando tomates")
+}
+function cortarLechuga() {
+    console.log("cortando lechuga")
+}
+function cortarPepino() {
+    console.log("cortando pepino para el primo")
+}
+function cortarLimon() {
+    console.log("cortando limon")
+}
+function prepararEnsalada() {
+    cortarTomate()
+    cortarLechuga()
+    cortarPepino()
+    cortarLimon()
+    console.log("mesclando las verduras")
+}
+function comer() {
+    prepararEnsalada()
+    console.log("tragando la ensalada")
+}
+comer()
+```
