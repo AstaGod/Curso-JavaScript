@@ -12,13 +12,58 @@
 // saludo()
 
 //binding en javascript lo que haces es subir las funciones declarativas a la cabecera de mi archivo
-console.log(despedida())//todas las funciones internamente lo prioriza o lo sube arriba
+// console.log(despedida())//todas las funciones internamente lo prioriza o lo sube arriba
 
-//en el caso de funcion como valor o funciones flecha el binding solo eleva al principio del archivo la declaracion del enlace o variable mas no el valor por eso en estos caso debemos ejecutar la funcion despues de haberlo crearlo
-let saludo=()=>{return "hola primo"}
-console.log(saludo())
+// //en el caso de funcion como valor o funciones flecha el binding solo eleva al principio del archivo la declaracion del enlace o variable mas no el valor por eso en estos caso debemos ejecutar la funcion despues de haberlo crearlo
+// let saludo=()=>{return "hola primo"}
+// console.log(saludo())
 
-//en el caso de la funcion declarativa el binding eleva toda la funcion al principio del archivo por eso podemos ejecutar la funcion desde cualquier parte del archivo incluso antes de que sea creada.
-function despedida(){
-    return "adios"
+// //en el caso de la funcion declarativa el binding eleva toda la funcion al principio del archivo por eso podemos ejecutar la funcion desde cualquier parte del archivo incluso antes de que sea creada.
+// function despedida(){
+//     return "adios"
+// }
+
+//EJERCICIO
+//crear una funcion que tenga o almacene una variable contador y podamos con funciones realizar la suma +1 de esta variable y la resta +1 de la misma variable ademas de poder tener una funcion que me permita acceder el valor actual y poder mostrarlo.
+
+//let contador=0
+//function incremento
+//return contador++
+//function decremento
+//return contador --
+//function valorContador
+//return contador
+function contador(){
+    //variable local
+    let contador=0
+    function incre(){
+        return contador++
+    }
+    function decre(){
+        return contador--
+    }
+    function valueCount(){
+        console.log(contador)
+    }
+    return {
+        valueCount,
+        incre,
+        decre
+    }
 }
+let count1=contador()
+count1.valueCount()
+count1.incre()
+count1.valueCount()
+
+for(let i=0;i<5;i++){
+    count1.incre()
+}
+count1.valueCount()
+
+
+let count2=contador()
+for(let i=0;i<5;i++){
+    count2.decre()
+}
+count2.valueCount()
