@@ -33,37 +33,52 @@
 //return contador --
 //function valorContador
 //return contador
+// function contador(){
+//     //variable local
+//     let contador=0
+//     function incre(){
+//         return contador++
+//     }
+//     function decre(){
+//         return contador--
+//     }
+//     function valueCount(){
+//         console.log(contador)
+//     }
+//     return {
+//         valueCount,
+//         incre,
+//         decre
+//     }
+// }
+// let count1=contador()
+// count1.valueCount()
+// count1.incre()
+// count1.valueCount()
+
+// for(let i=0;i<5;i++){
+//     count1.incre()
+// }
+// count1.valueCount()
+
+
+// let count2=contador()
+// for(let i=0;i<5;i++){
+//     count2.decre()
+// }
+// count2.valueCount()
+
 function contador(){
-    //variable local
-    let contador=0
-    function incre(){
-        return contador++
+    this.contador=0
+    this.incre=function(){
+        this.contador++
     }
-    function decre(){
-        return contador--
-    }
-    function valueCount(){
-        console.log(contador)
-    }
-    return {
-        valueCount,
-        incre,
-        decre
+    this.decre=function(){
+        this.contador--
     }
 }
-let count1=contador()
-count1.valueCount()
+//realizamos la instancia
+let count1=new contador
+console.log(count1.contador)
 count1.incre()
-count1.valueCount()
-
-for(let i=0;i<5;i++){
-    count1.incre()
-}
-count1.valueCount()
-
-
-let count2=contador()
-for(let i=0;i<5;i++){
-    count2.decre()
-}
-count2.valueCount()
+console.log(count1.contador)
