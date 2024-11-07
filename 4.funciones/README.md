@@ -234,3 +234,28 @@ for(let i=0,i<5;i++){
 > El problema principal de este tipo de funcion es que cuando creamos un nuevo objeto a partir de la funcion tipo clase, reservara espacio en memoria para toda la clase y sus valores creadors eso quiere decir variables y funciones, cada vez que llamamos a una funcion esta se replica en memoria.
 
 ## prototype (Tarea - averiguar y sus ejemplos)
+El prototype en JavaScript es un mecanismo que permite agregar propiedades y métodos a los objetos creados por funciones constructoras. Esto es muy útil cuando quieres crear múltiples instancias de un objeto que compartan ciertos comportamientos o datos sin necesidad de definirlos cada vez.
+
+¿Qué es el prototype en JavaScript?
+
+Cada función en JavaScript tiene una propiedad llamada prototype. Cuando creas un objeto a partir de una función constructora usando new, el objeto hereda todas las propiedades y métodos que están en el prototype de esa función. Esto permite compartir comportamientos y mejorar el rendimiento, ya que no necesitas duplicar métodos para cada instancia del objeto.
+```js
+// Definimos una función constructora llamada Persona
+function Persona(nombre, edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+}
+
+// Agregamos un método al prototype de Persona
+Persona.prototype.saludar = function() {
+    return `Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`;
+};
+
+// Creamos una instancia de Persona
+let persona1 = new Persona("Juan", 30);
+let persona2 = new Persona("Ana", 25);
+
+// Usamos el método saludar, que fue agregado al prototype
+console.log(persona1.saludar()); // "Hola, mi nombre es Juan y tengo 30 años."
+console.log(persona2.saludar()); // "Hola, mi nombre es Ana y tengo 25 años."
+```
