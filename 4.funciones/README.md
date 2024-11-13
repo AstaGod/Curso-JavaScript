@@ -286,7 +286,34 @@ Contador.prototype={
 > es una convencion usar como nombre de nuestra funcion principal, 1. que debe ser singular, 2. que use pascalCase
 
 ## RECURSION EN FUNCIONES (tareas)
+```js
+function factorial(n){
+    if (n==1){
+        return 1
+    }
+    return n*factorial(n-1)
+}
+console.log(factorial(5))
+```
 ## FUNCIONES CALLBACK (tareas)
+
+Las funciones callback en JavaScript son funciones que se pasan como argumentos a otras funciones y luego se ejecutan dentro de la función que las recibe. Se usan mucho en JavaScript para manejar tareas asincrónicas (como leer archivos o hacer solicitudes a un servidor) y para asegurarse de que ciertas acciones ocurran en un orden específico.
+
+Ejemplo básico de función callback
+Aquí tienes un ejemplo para ilustrar cómo funcionan las funciones callback:
+```js
+function procesarTarea(tarea, callback) {
+    console.log(`Empezando la tarea: ${tarea}`);
+    callback(); // Ejecuta la función callback después de procesar la tarea
+}
+
+function tareaFinalizada() {
+    console.log("La tarea ha sido completada.");
+}
+
+// Ejecución
+procesarTarea("Aprender callbacks en JavaScript", tareaFinalizada);
+```
 # CLASES 
 Las clases en javascript llegan en la version `ECMAScript6`, javascript no tenia al igual que en otros lenguajes de programacion orientadas a objetos las `clases` ya que javascript se enfocaba en la `programacion funcional` sin embargo con la llegada de `ES6` adopta ser un lenguaje de programacion multiparadigma, entre ellos la `programacion orientada de objetos` con la llegada de las `clases`.
 ## Estructura de una clase en JavaScript
