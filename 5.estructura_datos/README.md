@@ -166,6 +166,26 @@ let arr = [1, 2, 3];
 arr.reverse();  // [3, 2, 1]
 ```
 ## Objetos
-### creacion 
+los objetos son tipos de datos estructurados similares a las lista, para poder acceder a un elemento de una lista javascript les asignava indices, en este caso los objetos como unica diferencia de las listas nosotros podremos asignar el nombre del elemento al cual deseamos acceder a esto se le conoce como `clave:valor`
+cada clave valor es un elemento de un objeto si deseamos crear  mas elementos tendremos que separarlos por comas
+### creacion
+para crear un objeto debemos encerrar los elementos en llaves `{}` cada elemento estara conformao por su `clave:valor`
+```js
+let datosJory=["jory","rodriguez",20,"M"]
+let datosJoryObjeto={
+  nombre:"jory",
+  apellido:"rodriguez",
+  edad:20,
+  sexo:"todos los dias",
+  ganado:["el primo","los chamos","las enfermeras","mineros"],
+  direccion:{
+    tipoCalle:"pasaje",
+    nombreCalle:"querobamba",
+    numeroVivienda:222,
+    numeroCuarto:5
+  },
+  accion:()=>{console.log("hola soy jory")}
+}
+```
 ### acceder a un elemento del objeto
 ### metodos
