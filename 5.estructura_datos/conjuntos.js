@@ -136,3 +136,18 @@ console.log(miComputadora)
 miComputadora["Teclado"]="Logitec"
 console.log(miComputadora)
 //averiguar como eliminar un elemento de un objeto
+// En JavaScript, puedes eliminar un elemento de un objeto usando el operador delete. Este operador elimina la propiedad especificada de un objeto.
+let persona = {
+    nombre: "Juan",
+    edad: 30,
+    profesion: "Ingeniero"
+};
+
+console.log(persona); 
+// Salida: { nombre: 'Juan', edad: 30, profesion: 'Ingeniero' }
+
+// Eliminar la propiedad "profesion"
+delete persona.profesion;
+
+console.log(persona); 
+// Salida: { nombre: 'Juan', edad: 30 }
