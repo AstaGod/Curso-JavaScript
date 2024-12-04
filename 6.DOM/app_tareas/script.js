@@ -1,4 +1,4 @@
-let input=document.querySelector("#tareas")
+let input=document.querySelector("#tarea")
 let button=document.querySelector("#btn-agregar")
 let ul=document.querySelector("#lista-tareas")
 
